@@ -353,7 +353,5 @@ namespace Snippet
         {
             OpenCollection(((sender as ToolStripButton).Tag as string));
         }
-
-
     }
 }

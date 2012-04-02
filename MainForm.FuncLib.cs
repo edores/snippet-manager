@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Snippet
 {
-    partial class MainForm
+    public partial class MainForm
     {
         private void NewCollection()
         {
