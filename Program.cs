@@ -83,6 +83,7 @@
  * -- ENHANCEMENT -- Add Folder > Extension = EMPTY => Should get ALL extensions (DF)
  * -- ENHANCEMENT -- Search > Match by regular expressions
  * -- ENHANCEMENT -- Search > Match by logical expressions && || ! (AND OR NOT)
+ * -- ENHANCEMENT -- File content > R-Click > Standard Context Menu => Custom File edit Context menu (Redefine menu)
  * 
  * -- IDEA -- Make a Personal Organizer with multiple functions: Scheduler, Back-count Timer, ToDo lists, File Viewer (Images,
  *            .htm, other file types)
