@@ -888,7 +888,8 @@ namespace Snippet
                 {
                     return true;
                 }
-                else if (tag.IndexOf(word, 0, comparisonMode) > -1)
+                //else if (tag.IndexOf(word, 0, comparisonMode) > -1)  // Partial match
+                else if (tag.IndexOf(word, 0, comparisonMode) == 0)  // Partial match, beginning from 0 character
                 {
                     return true;
                 }

@@ -57,7 +57,9 @@
  *             -- ENHANCEMENT -- Add Folder > Dialog > Make "OK" - default button; "Cancel" - Esc button;
  * 23-MAR-2012    
  *             -- BUGFIX -- Open file in content => Content is empty, if file is not .txt, .sc, .sql extension; (DF)
- *             
+ * 08-MAY-2012    
+ *             -- ENHANCEMENT -- Tag Search > Match whole word or Partial match having the same beginning
+ * 
  * TODO (Planned enhancements, bugfixes, and ideas):                              
  * 
  * -- ENHANCEMENT -- Open Collection => Open collection INCREMENTALLY;
@@ -79,6 +81,8 @@
  * -- ENHANCEMENT -- Content > Tab with "dirty" file => Mark with '*' and/or BOLD font. (DF)
  * -- ENHANCEMENT -- Search > textbox; Tags > Textbox => Autocomplete (DF)
  * -- ENHANCEMENT -- Add Folder > Extension = EMPTY => Should get ALL extensions (DF)
+ * -- ENHANCEMENT -- Search > Match by regular expressions
+ * -- ENHANCEMENT -- Search > Match by logical expressions && || ! (AND OR NOT)
  * 
  * -- IDEA -- Make a Personal Organizer with multiple functions: Scheduler, Back-count Timer, ToDo lists, File Viewer (Images,
  *            .htm, other file types)

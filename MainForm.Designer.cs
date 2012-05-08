@@ -37,6 +37,13 @@
             this.stCollection = new System.Windows.Forms.ToolStripStatusLabel();
             this.MainSplit = new System.Windows.Forms.SplitContainer();
             this.SelectorSplit = new System.Windows.Forms.SplitContainer();
+            this.SelectorTabs = new CustomTabs.FixedTabControl();
+            this.tabFileSelector = new System.Windows.Forms.TabPage();
+            this.lstFileSelector = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabSearchResults = new System.Windows.Forms.TabPage();
+            this.lstSearchResultsSelector = new System.Windows.Forms.ListView();
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SelectorSearchGroup = new System.Windows.Forms.GroupBox();
             this.btnSearchSelector = new System.Windows.Forms.Button();
             this.cbNoTags = new System.Windows.Forms.CheckBox();
@@ -46,6 +53,7 @@
             this.cbTag = new System.Windows.Forms.CheckBox();
             this.txtSearchSelector = new System.Windows.Forms.TextBox();
             this.ContentSplit = new System.Windows.Forms.SplitContainer();
+            this.ContentFileTabs = new CustomTabs.FixedTabControl();
             this.TagSplit = new System.Windows.Forms.SplitContainer();
             this.lstTagsContent = new System.Windows.Forms.ListView();
             this.btnMoveDn = new System.Windows.Forms.Button();
@@ -77,14 +85,6 @@
             this.cmiCloseAllOtherTabs = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiCloseThisTab = new System.Windows.Forms.ToolStripMenuItem();
             this.cmiSaveFile = new System.Windows.Forms.ToolStripMenuItem();
-            this.SelectorTabs = new CustomTabs.FixedTabControl();
-            this.tabFileSelector = new System.Windows.Forms.TabPage();
-            this.lstFileSelector = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tabSearchResults = new System.Windows.Forms.TabPage();
-            this.lstSearchResultsSelector = new System.Windows.Forms.ListView();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ContentFileTabs = new CustomTabs.FixedTabControl();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
@@ -98,6 +98,9 @@
             this.SelectorSplit.Panel1.SuspendLayout();
             this.SelectorSplit.Panel2.SuspendLayout();
             this.SelectorSplit.SuspendLayout();
+            this.SelectorTabs.SuspendLayout();
+            this.tabFileSelector.SuspendLayout();
+            this.tabSearchResults.SuspendLayout();
             this.SelectorSearchGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ContentSplit)).BeginInit();
             this.ContentSplit.Panel1.SuspendLayout();
@@ -110,9 +113,6 @@
             this.mnuMain.SuspendLayout();
             this.tbFile.SuspendLayout();
             this.cmContentTab.SuspendLayout();
-            this.SelectorTabs.SuspendLayout();
-            this.tabFileSelector.SuspendLayout();
-            this.tabSearchResults.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainer
@@ -155,9 +155,9 @@
             // 
             this.stMessage.AutoSize = false;
             this.stMessage.AutoToolTip = true;
-            this.stMessage.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.stMessage.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.stMessage.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.stMessage.Name = "stMessage";
             this.stMessage.Size = new System.Drawing.Size(453, 19);
@@ -170,9 +170,9 @@
             // stFile
             // 
             this.stFile.AutoSize = false;
-            this.stFile.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.stFile.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.stFile.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.stFile.Name = "stFile";
             this.stFile.Size = new System.Drawing.Size(200, 19);
@@ -183,9 +183,9 @@
             // stCollection
             // 
             this.stCollection.AutoSize = false;
-            this.stCollection.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right)
-                        | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
+            this.stCollection.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
+            | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.stCollection.BorderStyle = System.Windows.Forms.Border3DStyle.Etched;
             this.stCollection.Name = "stCollection";
             this.stCollection.Size = new System.Drawing.Size(200, 19);
@@ -231,6 +231,78 @@
             this.SelectorSplit.Size = new System.Drawing.Size(289, 419);
             this.SelectorSplit.SplitterDistance = 319;
             this.SelectorSplit.TabIndex = 0;
+            // 
+            // SelectorTabs
+            // 
+            this.SelectorTabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.SelectorTabs.Controls.Add(this.tabFileSelector);
+            this.SelectorTabs.Controls.Add(this.tabSearchResults);
+            this.SelectorTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.SelectorTabs.Location = new System.Drawing.Point(0, 0);
+            this.SelectorTabs.Name = "SelectorTabs";
+            this.SelectorTabs.SelectedIndex = 0;
+            this.SelectorTabs.Size = new System.Drawing.Size(287, 317);
+            this.SelectorTabs.TabIndex = 0;
+            // 
+            // tabFileSelector
+            // 
+            this.tabFileSelector.Controls.Add(this.lstFileSelector);
+            this.tabFileSelector.Location = new System.Drawing.Point(4, 4);
+            this.tabFileSelector.Name = "tabFileSelector";
+            this.tabFileSelector.Size = new System.Drawing.Size(279, 291);
+            this.tabFileSelector.TabIndex = 0;
+            this.tabFileSelector.Tag = "Files";
+            this.tabFileSelector.Text = "Files";
+            this.tabFileSelector.UseVisualStyleBackColor = true;
+            // 
+            // lstFileSelector
+            // 
+            this.lstFileSelector.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.lstFileSelector.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstFileSelector.FullRowSelect = true;
+            this.lstFileSelector.Location = new System.Drawing.Point(0, 0);
+            this.lstFileSelector.Name = "lstFileSelector";
+            this.lstFileSelector.Size = new System.Drawing.Size(279, 291);
+            this.lstFileSelector.TabIndex = 0;
+            this.lstFileSelector.UseCompatibleStateImageBehavior = false;
+            this.lstFileSelector.View = System.Windows.Forms.View.Details;
+            this.lstFileSelector.ItemActivate += new System.EventHandler(this.lstFileSelector_ItemActivate);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "File Name";
+            this.columnHeader1.Width = 268;
+            // 
+            // tabSearchResults
+            // 
+            this.tabSearchResults.Controls.Add(this.lstSearchResultsSelector);
+            this.tabSearchResults.Location = new System.Drawing.Point(4, 4);
+            this.tabSearchResults.Name = "tabSearchResults";
+            this.tabSearchResults.Size = new System.Drawing.Size(279, 291);
+            this.tabSearchResults.TabIndex = 1;
+            this.tabSearchResults.Tag = "Search_Results";
+            this.tabSearchResults.Text = "Search Results";
+            this.tabSearchResults.UseVisualStyleBackColor = true;
+            // 
+            // lstSearchResultsSelector
+            // 
+            this.lstSearchResultsSelector.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2});
+            this.lstSearchResultsSelector.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lstSearchResultsSelector.FullRowSelect = true;
+            this.lstSearchResultsSelector.Location = new System.Drawing.Point(0, 0);
+            this.lstSearchResultsSelector.Name = "lstSearchResultsSelector";
+            this.lstSearchResultsSelector.Size = new System.Drawing.Size(279, 291);
+            this.lstSearchResultsSelector.TabIndex = 0;
+            this.lstSearchResultsSelector.UseCompatibleStateImageBehavior = false;
+            this.lstSearchResultsSelector.View = System.Windows.Forms.View.Details;
+            this.lstSearchResultsSelector.ItemActivate += new System.EventHandler(this.lstFileSelector_ItemActivate);
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "File Name";
+            this.columnHeader2.Width = 275;
             // 
             // SelectorSearchGroup
             // 
@@ -336,6 +408,19 @@
             this.ContentSplit.Size = new System.Drawing.Size(575, 419);
             this.ContentSplit.SplitterDistance = 327;
             this.ContentSplit.TabIndex = 0;
+            // 
+            // ContentFileTabs
+            // 
+            this.ContentFileTabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.ContentFileTabs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentFileTabs.Location = new System.Drawing.Point(0, 0);
+            this.ContentFileTabs.Name = "ContentFileTabs";
+            this.ContentFileTabs.SelectedIndex = 0;
+            this.ContentFileTabs.Size = new System.Drawing.Size(573, 325);
+            this.ContentFileTabs.TabIndex = 0;
+            this.ContentFileTabs.Selected += new System.Windows.Forms.TabControlEventHandler(this.ContentFileTabs_Selected);
+            this.ContentFileTabs.Click += new System.EventHandler(this.ContentFileTabs_Click);
+            this.ContentFileTabs.DoubleClick += new System.EventHandler(this.ContentFileTabs_DoubleClick);
             // 
             // TagSplit
             // 
@@ -630,91 +715,6 @@
             this.cmiSaveFile.Text = "Save File";
             this.cmiSaveFile.Click += new System.EventHandler(this.cmiSaveFile_Click);
             // 
-            // SelectorTabs
-            // 
-            this.SelectorTabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.SelectorTabs.Controls.Add(this.tabFileSelector);
-            this.SelectorTabs.Controls.Add(this.tabSearchResults);
-            this.SelectorTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SelectorTabs.Location = new System.Drawing.Point(0, 0);
-            this.SelectorTabs.Name = "SelectorTabs";
-            this.SelectorTabs.SelectedIndex = 0;
-            this.SelectorTabs.Size = new System.Drawing.Size(287, 317);
-            this.SelectorTabs.TabIndex = 0;
-            // 
-            // tabFileSelector
-            // 
-            this.tabFileSelector.Controls.Add(this.lstFileSelector);
-            this.tabFileSelector.Location = new System.Drawing.Point(4, 4);
-            this.tabFileSelector.Name = "tabFileSelector";
-            this.tabFileSelector.Size = new System.Drawing.Size(279, 291);
-            this.tabFileSelector.TabIndex = 0;
-            this.tabFileSelector.Tag = "Files";
-            this.tabFileSelector.Text = "Files";
-            this.tabFileSelector.UseVisualStyleBackColor = true;
-            // 
-            // lstFileSelector
-            // 
-            this.lstFileSelector.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.lstFileSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstFileSelector.FullRowSelect = true;
-            this.lstFileSelector.Location = new System.Drawing.Point(0, 0);
-            this.lstFileSelector.Name = "lstFileSelector";
-            this.lstFileSelector.Size = new System.Drawing.Size(279, 291);
-            this.lstFileSelector.TabIndex = 0;
-            this.lstFileSelector.UseCompatibleStateImageBehavior = false;
-            this.lstFileSelector.View = System.Windows.Forms.View.Details;
-            this.lstFileSelector.ItemActivate += new System.EventHandler(this.lstFileSelector_ItemActivate);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "File Name";
-            this.columnHeader1.Width = 268;
-            // 
-            // tabSearchResults
-            // 
-            this.tabSearchResults.Controls.Add(this.lstSearchResultsSelector);
-            this.tabSearchResults.Location = new System.Drawing.Point(4, 4);
-            this.tabSearchResults.Name = "tabSearchResults";
-            this.tabSearchResults.Size = new System.Drawing.Size(279, 291);
-            this.tabSearchResults.TabIndex = 1;
-            this.tabSearchResults.Tag = "Search_Results";
-            this.tabSearchResults.Text = "Search Results";
-            this.tabSearchResults.UseVisualStyleBackColor = true;
-            // 
-            // lstSearchResultsSelector
-            // 
-            this.lstSearchResultsSelector.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2});
-            this.lstSearchResultsSelector.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstSearchResultsSelector.FullRowSelect = true;
-            this.lstSearchResultsSelector.Location = new System.Drawing.Point(0, 0);
-            this.lstSearchResultsSelector.Name = "lstSearchResultsSelector";
-            this.lstSearchResultsSelector.Size = new System.Drawing.Size(279, 291);
-            this.lstSearchResultsSelector.TabIndex = 0;
-            this.lstSearchResultsSelector.UseCompatibleStateImageBehavior = false;
-            this.lstSearchResultsSelector.View = System.Windows.Forms.View.Details;
-            this.lstSearchResultsSelector.ItemActivate += new System.EventHandler(this.lstFileSelector_ItemActivate);
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "File Name";
-            this.columnHeader2.Width = 275;
-            // 
-            // ContentFileTabs
-            // 
-            this.ContentFileTabs.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.ContentFileTabs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentFileTabs.Location = new System.Drawing.Point(0, 0);
-            this.ContentFileTabs.Name = "ContentFileTabs";
-            this.ContentFileTabs.SelectedIndex = 0;
-            this.ContentFileTabs.Size = new System.Drawing.Size(573, 325);
-            this.ContentFileTabs.TabIndex = 0;
-            this.ContentFileTabs.Selected += new System.Windows.Forms.TabControlEventHandler(this.ContentFileTabs_Selected);
-            this.ContentFileTabs.Click += new System.EventHandler(this.ContentFileTabs_Click);
-            this.ContentFileTabs.DoubleClick += new System.EventHandler(this.ContentFileTabs_DoubleClick);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -722,7 +722,7 @@
             this.ClientSize = new System.Drawing.Size(868, 492);
             this.Controls.Add(this.toolStripContainer);
             this.Name = "MainForm";
-            this.Text = "Snippet - v.1.3 (2012-03-09)";
+            this.Text = "Snippet - v.1.3.1 (2012-05-08)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.toolStripContainer.BottomToolStripPanel.ResumeLayout(false);
@@ -742,6 +742,9 @@
             this.SelectorSplit.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SelectorSplit)).EndInit();
             this.SelectorSplit.ResumeLayout(false);
+            this.SelectorTabs.ResumeLayout(false);
+            this.tabFileSelector.ResumeLayout(false);
+            this.tabSearchResults.ResumeLayout(false);
             this.SelectorSearchGroup.ResumeLayout(false);
             this.SelectorSearchGroup.PerformLayout();
             this.ContentSplit.Panel1.ResumeLayout(false);
@@ -758,9 +761,6 @@
             this.tbFile.ResumeLayout(false);
             this.tbFile.PerformLayout();
             this.cmContentTab.ResumeLayout(false);
-            this.SelectorTabs.ResumeLayout(false);
-            this.tabFileSelector.ResumeLayout(false);
-            this.tabSearchResults.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
