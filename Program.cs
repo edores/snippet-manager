@@ -28,8 +28,8 @@
  *             -- ENHANCEMENT -- Add Folder > Some files were deleted, but enlisted in collection => remove them from 
  *                               collection (from dictionary)
  * 28-FEB-2012 -- 
- *             -- BUGFIX -- Content > opened File; Removed file is not in Collection after Add Folder => Orphaned 
- *                          content file; If this tab is deselcted, and then selected back => Runtime Error
+ *             -- BUGFIX      -- Content > opened File; Removed file is not in Collection after Add Folder => Orphaned 
+ *                               content file; If this tab is deselcted, and then selected back => Runtime Error
  *             -- ENHANCEMENT -- Content > Some file tab is selected > Move focus to File Selector => File should
  *                               be highlihted in File Selector;
  *             -- ENHANCEMENT -- User pressed Ctrl-S => Status Bar > Message: File saved at <timestmp>
@@ -40,7 +40,7 @@
  * 08-MAR-2012 
  *             -- ENHANCEMENT -- Application Unhandled exceptions handler implemented;
  * 09-MAR-2012    
- *             -- BUGFIX -- Add New Tag => Apply Trim() before saving in collection;
+ *             -- BUGFIX      -- Add New Tag => Apply Trim() before saving in collection;
  *             -- ENHANCEMENT -- All bottom tabs in tab panels looks ugly; Need to implement custom drawing;
  *             -- ENHANCEMENT -- Content Tabs > Context menu : Close All Tabs; Close All Other Tags; Close This Tab;
  * 14-MAR-2012    
@@ -50,7 +50,7 @@
  *             -- ENHANCEMENT -- Add Folder > .Folders and .files -- are invisible (StartsWith('.') == true)
  * 17-MAR-2012    
  *             -- ENHANCEMENT -- Content > If file is a picture or Text > show it;
- *             -- BUGFIX -- Search > Text Search => Enable only for text files      
+ *             -- BUGFIX      -- Search > Text Search => Enable only for text files      
  * 21-MAR-2012    
  *             -- ENHANCEMENT -- Search > Tags => substring matching (not whole word)
  *             -- ENHANCEMENT -- Search Mini Form > when txtSearch is in focus => ENTER key pressed submits the search
@@ -59,12 +59,14 @@
  *             -- BUGFIX -- Open file in content => Content is empty, if file is not .txt, .sc, .sql extension; (DF)
  * 08-MAY-2012    
  *             -- ENHANCEMENT -- Tag Search > Match whole word or Partial match having the same beginning
+ *             -- ENHANCEMENT -- Add Folder > Extension = EMPTY => Should get ALL extensions (DF)
  * 
  * TODO (Planned enhancements, bugfixes, and ideas):                              
  * 
  * -- ENHANCEMENT -- Open Collection => Open collection INCREMENTALLY;
+ * -- ENHANCEMENT -- Open collection => Add a single file to the collection
  * -- ENHANCEMENT -- File Selector > Search Results => Save as new collection
- * -- ENHANCEMENT -- Opened files => Save as new collection
+ * -- ENHANCEMENT -- Content > Opened files => Save as new collection
  * -- ENHANCEMENT -- Content > Opened file; Search (Ctrl-F, Edit, Save);
  * -- ENHANCEMENT -- Installation application to be created. (Install.exe / Uninstall.exe)
  * -- ENHANCEMENT -- File Selector => Sort files
@@ -73,14 +75,12 @@
  * -- ENHANCEMENT -- Opened File > TextBox > R-Click => Context Menu > Save File
  * -- ENHANCEMENT -- File Selector > R-Click > Context Menu => Delete From Collection
  * -- ENHANCEMENT -- Search > Match whole word flag
- * -- ENHANCEMENT -- Content > If file is a picture > show it;
- * -- ENHANCEMENT -- Configuration settings => keep them as JSON file
+ * -- ENHANCEMENT -- Configuration settings => keep them as JSON file; NO: Use only app.config;
  * -- ENHANCEMENT -- Add Folder => MRU Selected folders; => MRU extensions
  * -- ENHANCEMENT -- Tag List > Check for duplicates;
  * -- ENHANCEMENT -- Refresh() => Reload the same collection to reflect file system changes. (DF)
  * -- ENHANCEMENT -- Content > Tab with "dirty" file => Mark with '*' and/or BOLD font. (DF)
  * -- ENHANCEMENT -- Search > textbox; Tags > Textbox => Autocomplete (DF)
- * -- ENHANCEMENT -- Add Folder > Extension = EMPTY => Should get ALL extensions (DF)
  * -- ENHANCEMENT -- Search > Match by regular expressions
  * -- ENHANCEMENT -- Search > Match by logical expressions && || ! (AND OR NOT)
  * -- ENHANCEMENT -- File content > R-Click > Standard Context Menu => Custom File edit Context menu (Redefine menu)
